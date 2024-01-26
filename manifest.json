@@ -9,10 +9,10 @@
     "content_scripts": [
         {
             "matches": [
-                "https://gemini.com/*"
+                "<all_urls>"
             ],
             "js": [
-                "content.js"
+                "src/main.js"
             ]
         }
     ],
