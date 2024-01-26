@@ -1,8 +1,9 @@
 import { Gemini, screenshot} from '@gemini/core';
-import API_KEY from background.js;
+// import API_KEY from './api_keys.js';
 
 
 // process.env.API_KEY
+const API_KEY = require('./api_keys.js')
 const gemini = new Gemini(API_KEY);
 const model = 'gemini-pro-vision';
 
