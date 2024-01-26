@@ -1,7 +1,6 @@
 import { Gemini, screenshot} from '@gemini/core';
 
-let API_KEY = 'AIzaSyDYE-Au5wLvupiFE_U9emFLHlRNEBBEeYU';
-const gemini = new Gemini(API_KEY);
+const gemini = new Gemini(process.env.API_KEY);
 const model = 'gemini-pro-vision';
 
 // Add a default keyboard binding.
