@@ -1,0 +1,26 @@
+```
+{
+    "manifest_version": 2,
+    "name": "Gemini Screen Pal",
+    "description": "Get suggestions for input screenshots using Gemini API",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gemini.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
+```
